@@ -1,2 +1,3 @@
-# ProyectoFinalRutaFullStackUPB
-Este repositorio sera donde se entregara el codigo de la pagina web, la idea del proyecto es una app donde tu puedas ver las Recetas de diferentes Comidas
+LA RECETA DE LA ABUELA DELFI
+
+Esta es una pagina web donde encontraras diferentes tipos de recetas para preparar tus comidas favoritas, aqui encontrarar Imagenes, los ingredientes y el paso paso para cada 1 de ellos
