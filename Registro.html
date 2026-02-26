@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse - La Receta de la Abuela Delfi</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="logica.js" defer></script>
+  
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form-box">
+            <h1>📝 Registrarse</h1>
+            <p class="auth-form-subtitle">Crea tu cuenta y comparte tus recetas favoritas con la comunidad</p>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="fullname">
+                        <span class="form-icon">👤</span>Nombre completo
+                    </label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Ej: Carlos Mendez"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="username">
+                        <span class="form-icon">🎯</span>Nombre de perfil
+                    </label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Ej: carlitosdelfi"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        <span class="form-icon">📧</span>Correo electrónico
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Ej: carlos@email.com"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <span class="form-icon">🔐</span>Contraseña
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Mínimo 8 caracteres"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="password-confirm">
+                        <span class="form-icon">✓</span>Confirmar contraseña
+                    </label>
+                    <input
+                        type="password"
+                        id="password-confirm"
+                        name="password-confirm"
+                        placeholder="Repite tu contraseña"
+                        required
+                    />
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="form-btn btn-register">
+                        ✨ Crear cuenta
+                    </button>
+                    <a href="index.html" class="form-btn btn-cancel">
+                        🏠 Continuar explorando
+                    </a>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                <p><a href="inicio.html">← Volver al inicio</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const passwordConfirm = document.getElementById('password-confirm').value;
+            
+            if (password !== passwordConfirm) {
+                alert('⚠️ Las contraseñas no coinciden');
+                return;
+            }
+            
+            if (password.length < 8) {
+                alert('⚠️ La contraseña debe tener al menos 8 caracteres');
+                return;
+            }
+            
+            alert('✅ Registro exitoso. ¡Bienvenido a nuestra comunidad!');
+            // Aquí irá la lógica de envío del formulario al backend
+        });
+    </script>
+</body>
+</html>
