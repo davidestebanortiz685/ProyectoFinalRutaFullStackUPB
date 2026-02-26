@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Favoritas - La Receta de la Abuela Delfi</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="logica.js" defer></script>
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="brand">La Receta de la Abuela Delfi</h1>
+            <ul class="main-navo" aria-label="Navegación principal">
+                <a class="nav-btn active" href="index.html">Todas</a>
+                <a class="nav-btn active" href="RecetasFavoritas.html">Favoritas</a>
+                <a class="nav-btn active" href="profile.html">Mi perfil</a>
+                <a class="nav-btn active" href="inicio.html">Salir</a>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="favorites-title-section">
+            <h2>❤️ Mis Recetas Favoritas</h2>
+            <p>Aquí están todas tus recetas guardadas</p>
+        </section>
+
+        <section id="favorites-section">
+            <!-- Las favoritas aparecerán aquí dinámicamente -->
+            <div class="favorites-list">
+                <article class="favorites-item">
+                    <div class="favorites-image" style="background-image: url('assets/papas.jpg');"></div>
+                    <div class="favorites-content">
+                        <h3 class="favorites-title">Ajiaco de la abuela</h3>
+                        <p class="favorites-meta">🏆 Fácil • ⏱️ 45 min • 👨‍🍳 Por Delfi</p>
+                        <p class="favorites-excerpt">Un ajiaco tradicional con ingredientes que todos tenemos en casa. Perfecto para los días fríos y familiares.</p>
+                        <div class="favorites-actions">
+                            <button class="btn-view">👁️ Ver receta</button>
+                            <button class="btn-remove">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="favorites-item">
+                    <div class="favorites-image"></div>
+                    <div class="favorites-content">
+                        <h3 class="favorites-title">Arroz con leche</h3>
+                        <p class="favorites-meta">⭐ Básico • ⏱️ 30 min • 👨‍🍳 Por María</p>
+                        <p class="favorites-excerpt">Postre cremoso y familiar que nunca falla. Ideal para acabar una comida con toques nostálgicos.</p>
+                        <div class="favorites-actions">
+                            <button class="btn-view">👁️ Ver receta</button>
+                            <button class="btn-remove">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="favorites-item">
+                    <div class="favorites-image"></div>
+                    <div class="favorites-content">
+                        <h3 class="favorites-title">Sopa de verduras</h3>
+                        <p class="favorites-meta">🥗 Saludable • ⏱️ 25 min • 👨‍🍳 Por Pedro</p>
+                        <p class="favorites-excerpt">Ligera y reconfortante para cualquier día. Una opción nutritiva llena de sabor.</p>
+                        <div class="favorites-actions">
+                            <button class="btn-view">👁️ Ver receta</button>
+                            <button class="btn-remove">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Estado vacío (comentado, aparece cuando no hay favoritas) -->
+        <!-- 
+        <section class="favorites-empty">
+            <h3>📭 No tienes recetas favoritas</h3>
+            <p>¡Explora nuestras recetas y marca tus favoritas para verlas aquí!</p>
+            <a href="index.html">Buscar recetas</a>
+        </section>
+        -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 La Receta de la Abuela Delfi — Tus recetas guardadas</p>
+        </footer>
+    </footer>
+</body>
+</html>
