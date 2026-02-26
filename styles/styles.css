@@ -1,0 +1,63 @@
+:root{
+	--color-primary: #2932e2;
+	--color-secondary: #13da8a;
+	--color-bg: #3772e8;
+	--text: #000000;
+	--error: #EF4444;
+	--radius: 8px;
+	--gap: 16px;
+}
+
+*{box-sizing:border-box}
+body{font-family: 'Times New Roman', Roboto, system-ui, Arial; margin:0; color:var(--text); background:var(--color-bg);}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--color-primary), #6b18d0);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.brand{font-size:1.25rem;margin:0}
+.main-nav{display:flex;gap:8px}
+.nav-btn{background:transparent;border:0;color:rgba(255,255,255,0.9);padding:8px 12px;border-radius:6px;cursor:pointer}
+.nav-btn.active{background:rgba(0,0,0,0.12)}
+
+/* Hero */
+.hero{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:28px 0}
+.hero h2{margin:0 0 8px 0;font-size:1.6rem}
+.hero p{margin:0;color:rgba(55,62,73,0.85)}
+.hero-actions{display:flex;gap:12px;align-items:center}
+.search{padding:10px 12px;border-radius:8px;border:1px solid #e0e0e0;min-width:220px}
+
+/* Buttons */
+.btn{padding:8px 14px;border-radius:var(--radius);border:0;cursor:pointer}
+.btn.primary{background:var(--color-primary);color:#fff;box-shadow:0 4px 10px rgba(140,41,226,0.12)}
+.btn.ghost{background:transparent;border:1px solid #e6e6e6;color:var(--text)}
+.btn.icon{background:transparent;border:0;font-size:1.05rem}
+
+/* Recipes grid */
+.recipes h3{margin:8px 0 16px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap)}
+.card{background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.06);overflow:hidden;display:flex;flex-direction:column}
+.card__media{height:140px;background:linear-gradient(90deg,#eee,#ddd)}
+.card__body{padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.card__title{margin:0;font-size:1.05rem}
+.card__meta{margin:0;color:#6b6f77;font-size:0.9rem}
+.card__excerpt{margin:0;color:#55606a;font-size:0.95rem}
+.card__actions{margin-top:auto;display:flex;gap:8px}
+
+/* Footer */
+.site-footer{padding:18px 0;text-align:center;color:#6b6f77}
+
+/* Responsive */
+@media (max-width:900px){
+	.grid{grid-template-columns:repeat(2,1fr)}
+	.hero{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:520px){
+	.grid{grid-template-columns:1fr}
+	.header-inner{flex-direction:column;gap:12px}
+	.search{width:100%}
+}
+
+/* Accessibility focus */
+.nav-btn:focus,.btn:focus,.search:focus{outline:3px solid rgba(140,41,226,0.18);outline-offset:2px}
+

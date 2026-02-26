@@ -1,15 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="logica.js" rel="script">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Receta de la Abuela Delfi</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="logica.js" defer></script>
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="brand">La Receta de la Abuela Delfi</h1>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <button class="nav-btn active">Todas</button>
+                <button class="nav-btn">Favoritas</button>
+                <button class="nav-btn">Mis recetas</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div>
+                <h2>Recetas tradicionales, paso a paso</h2>
+                <p>Explora recetas fáciles y caseras sin necesidad de registro. ¿Quieres compartir la tuya? Regístrate y compártela.</p>
+            </div>
+            <div class="hero-actions">
+                <input type="search" class="search" placeholder="Buscar receta, ingrediente..." aria-label="Buscar recetas" />
+                <button class="btn primary">Ver recetas</button>
+            </div>
+        </section>
+
+        <section class="recipes">
+            <h3>Recetas destacadas</h3>
+            <div class="grid">
+                <article class="card">
+                    <div class="card__media" aria-hidden="true"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Ajiaco de la abuela</h4>
+                        <p class="card__meta">Fácil • 45 min</p>
+                        <p class="card__excerpt">Un ajiaco tradicional con ingredientes que todos tenemos en casa.</p>
+                        <div class="card__actions">
+                            <button class="btn ghost">Ver</button>
+                            <button class="btn icon" aria-label="Agregar a favoritas">❤</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Arroz con leche</h4>
+                        <p class="card__meta">Básico • 30 min</p>
+                        <p class="card__excerpt">Postre cremoso y familiar que nunca falla.</p>
+                        <div class="card__actions">
+                            <button class="btn ghost">Ver</button>
+                            <button class="btn icon" aria-label="Agregar a favoritas">❤</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Sopa de verduras</h4>
+                        <p class="card__meta">Saludable • 25 min</p>
+                        <p class="card__excerpt">Ligera y reconfortante para cualquier día.</p>
+                        <div class="card__actions">
+                            <button class="btn ghost">Ver</button>
+                            <button class="btn icon" aria-label="Agregar a favoritas">❤</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Empanadas caseras</h4>
+                        <p class="card__meta">Intermedio • 60 min</p>
+                        <p class="card__excerpt">Masa crujiente y relleno jugoso al estilo familiar.</p>
+                        <div class="card__actions">
+                            <button class="btn ghost">Ver</button>
+                            <button class="btn icon" aria-label="Agregar a favoritas">❤</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 La Receta de la Abuela Delfi — Interfaz de ejemplo</p>
+        </div>
+    </footer>
 </body>
 </html>
