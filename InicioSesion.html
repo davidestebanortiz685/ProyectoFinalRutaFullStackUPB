@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión - La Receta de la Abuela Delfi</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="logica.js" defer></script>
+    
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form-box">
+            <h1>🔑 Iniciar sesión</h1>
+            <p class="auth-form-subtitle">Accede a tu cuenta para compartir y guardar tus recetas favoritas</p>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <span class="form-icon">👤</span>Usuario o correo electrónico
+                    </label>
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Ej: carlos@email.com o carlitosdelfi"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <span class="form-icon">🔐</span>Contraseña
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Tu contraseña"
+                        required
+                    />
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember" />
+                    <label for="remember">Recuérdame en este dispositivo</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="form-btn btn-login">
+                        ✨ Iniciar sesión
+                    </button>
+                    <a href="inicio.html" class="form-btn btn-back">
+                        ← Volver atrás
+                    </a>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>¿No tienes cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if (!email || !password) {
+                alert('⚠️ Por favor completa todos los campos');
+                return;
+            }
+            
+            // Aquí irá la validación contra el backend
+            alert('✅ ¡Sesión iniciada! Bienvenido a La Receta de la Abuela Delfi');
+            
+            // Redirigir a index.html
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
