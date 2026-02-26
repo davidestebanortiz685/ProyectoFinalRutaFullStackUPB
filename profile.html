@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - La Receta de la Abuela Delfi</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="logica.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="brand">La Receta de la Abuela Delfi</h1>
+            <ul class="main-navo" aria-label="Navegación principal">
+                <a class="nav-btn active" href="index.html">Todas</a>
+                <a class="nav-btn active" href="RecetasFavoritas.html">Favoritas</a>
+                <a class="nav-btn active" href="profile.html">Mi perfil</a>
+                <a class="nav-btn active" href="inicio.html">Salir</a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="profile-header">
+        <div class="profile-header-content">
+            <div class="profile-avatar">👨‍🍳</div>
+            <div class="profile-info">
+                <h1>Carlos Mendez</h1>
+                <p class="profile-email">carlos.mendez@email.com</p>
+                <div class="profile-stats">
+                    <div class="profile-stat">
+                        <span class="profile-stat-number">12</span>
+                        <span class="profile-stat-label">Recetas publicadas</span>
+                    </div>
+                    <div class="profile-stat">
+                        <span class="profile-stat-number">248</span>
+                        <span class="profile-stat-label">Me gusta recibidos</span>
+                    </div>
+                    <div class="profile-stat">
+                        <span class="profile-stat-number">34</span>
+                        <span class="profile-stat-label">Seguidores</span>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn-edit">✏️ Editar perfil</button>
+                    <button class="btn-logout">🚪 Cerrar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="profile-section recipes-section">
+            <h2>📖 Mis Recetas Publicadas</h2>
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                    <div class="recipe-card-image" style="background-image: url('assets/papas.jpg');"></div>
+                    <div class="recipe-card-body">
+                        <h3 class="recipe-card-title">Ajiaco de la abuela</h3>
+                        <p class="recipe-card-meta">Fácil • 45 min</p>
+                        <p class="recipe-card-excerpt">Un ajiaco tradicional con ingredientes que todos tenemos en casa.</p>
+                        <div class="recipe-card-actions">
+                            <button class="btn-edit-recipe">Editar</button>
+                            <button class="btn-remove-recipe">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="recipe-card-image"></div>
+                    <div class="recipe-card-body">
+                        <h3 class="recipe-card-title">Sopa de verduras</h3>
+                        <p class="recipe-card-meta">Saludable • 25 min</p>
+                        <p class="recipe-card-excerpt">Ligera y reconfortante para cualquier día.</p>
+                        <div class="recipe-card-actions">
+                            <button class="btn-edit-recipe">Editar</button>
+                            <button class="btn-remove-recipe">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="recipe-card-image"></div>
+                    <div class="recipe-card-body">
+                        <h3 class="recipe-card-title">Empanadas caseras</h3>
+                        <p class="recipe-card-meta">Intermedio • 60 min</p>
+                        <p class="recipe-card-excerpt">Masa crujiente y relleno jugoso al estilo familiar.</p>
+                        <div class="recipe-card-actions">
+                            <button class="btn-edit-recipe">Editar</button>
+                            <button class="btn-remove-recipe">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="recipe-card-image"></div>
+                    <div class="recipe-card-body">
+                        <h3 class="recipe-card-title">Pan casero</h3>
+                        <p class="recipe-card-meta">Intermedio • 120 min</p>
+                        <p class="recipe-card-excerpt">Pan recién horneado con un aroma irresistible.</p>
+                        <div class="recipe-card-actions">
+                            <button class="btn-edit-recipe">Editar</button>
+                            <button class="btn-remove-recipe">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Estado vacío (comentado) -->
+        <!--
+        <section class="profile-section">
+            <div class="empty-state">
+                <h3>📭 Aún no has publicado recetas</h3>
+                <p>¡Comparte tu primera receta y conéctate con otros amantes de la cocina!</p>
+                <a href="crear-receta.html">Crear receta</a>
+            </div>
+        </section>
+        -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 La Receta de la Abuela Delfi — Tu perfil de chef</p>
+        </div>
+    </footer>
+</body>
+</html>
